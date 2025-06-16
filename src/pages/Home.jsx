@@ -36,7 +36,7 @@ function Home() {
             color="text.primary"
             gutterBottom
           >
-            Welcome to My React App
+            Welcome to My React App Test
           </Typography>
           <Typography variant="h5" align="center" color="text.secondary" paragraph>
             A modern, responsive single-page application built with React and Material-UI

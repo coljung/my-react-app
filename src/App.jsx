@@ -19,6 +19,7 @@ import { Menu as MenuIcon } from '@mui/icons-material';
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
+import ChurningKarmaByUser from './pages/ChurningKarmaByUser';
 
 const theme = createTheme({
   palette: {
@@ -84,6 +85,7 @@ function Navigation() {
             >
               <MenuItem onClick={() => handleNavigation('/')}>Home</MenuItem>
               <MenuItem onClick={() => handleNavigation('/contact')}>Contact</MenuItem>
+              <MenuItem onClick={() => handleNavigation('/churningkarmabyuser')}>Churning Karma</MenuItem>
             </Menu>
           </>
         ) : (
@@ -93,6 +95,9 @@ function Navigation() {
             </Button>
             <Button color="inherit" component={Link} to="/contact">
               Contact
+            </Button>
+            <Button color="inherit" component={Link} to="/churningkarmabyuser">
+              Churning Karma
             </Button>
           </>
         )}
@@ -113,6 +118,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/churningkarmabyuser" element={<ChurningKarmaByUser />} />
             </Routes>
           </Box>
 
